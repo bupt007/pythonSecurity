@@ -17,7 +17,7 @@ if __name__=="__main__":
 		      '<script>alert(String.fromCharCode(88,83,83))</script>']
 	expectData = [ item for item in injectData]
 
-	fi = FormInjectionBrowser()
+	fi = FormInjectionBrowser(injectData,expectData)
 	fi.inject()
 	fi.close()
 
